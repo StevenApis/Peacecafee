@@ -1,0 +1,290 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: #efe7d3;
+}
+
+/* TOP NAVBAR */
+
+.top-navbar {
+  height: 70px;
+  background: #111;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 60px;
+}
+
+.top-navbar .brand {
+  color: #f2b35d;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.top-navbar ul {
+  display: flex;
+  list-style: none;
+  gap: 40px;
+}
+
+.top-navbar a {
+  text-decoration: none;
+  color: white;
+}
+
+.wrapper {
+  display: flex;
+}
+
+/* SIDEBAR */
+
+.sidebar {
+  width: 220px;
+  background: #522d28;
+  min-height: 100vh;
+  color: white;
+  padding: 40px 25px;
+}
+
+.logo {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.logo h3 {
+  margin-top: 10px;
+  color: #f2b35d;
+}
+
+.sidebar ul {
+  list-style: none;
+}
+
+.sidebar li {
+  margin: 25px 0;
+  cursor: pointer;
+}
+
+.sidebar ul li a {
+  color: inherit;
+  text-decoration: none;
+  display: inline-block;
+  width: 100%;
+}
+
+.sidebar ul li a:hover {
+  color: #f2b35d;
+}
+
+.sidebar ul li a:focus {
+  outline: none;
+}
+
+.social {
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  font-size: 22px;
+}
+
+.social a {
+  color: inherit;
+  text-decoration: none;
+  display: inline-flex;
+}
+
+.social a:hover {
+  color: #f2b35d;
+}
+/* HERO */
+
+.content {
+  flex: 1;
+}
+
+.hero {
+  height: 420px;
+  background: url("https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=1400");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  border-bottom-right-radius: 90px;
+  overflow: hidden;
+}
+
+.hero-video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.hero-audio {
+  display: none;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  padding: 60px 80px;
+  color: white;
+}
+
+.info {
+  display: flex;
+  gap: 60px;
+  font-size: 13px;
+  margin-bottom: 40px;
+}
+
+.hero h1 {
+  font-family: "Oswald", sans-serif;
+  font-size: 90px;
+  line-height: 1;
+}
+
+.hero h1 span {
+  color: #f2b35d;
+}
+
+.hero button {
+  margin-top: 40px;
+  background: #ff6243;
+  border: none;
+  padding: 15px 25px;
+  border-radius: 50px;
+  color: white;
+  cursor: pointer;
+}
+
+/* MENU */
+
+.menu-section {
+  width: 70%;
+  margin: 80px auto;
+  background: #6b4a47;
+  padding: 25px;
+}
+
+.tabs {
+  display: flex;
+  justify-content: space-around;
+  background: linear-gradient(135deg, #73524f 0%, #6b4a47 100%);
+  padding: 20px 15px;
+  border-radius: 10px;
+  gap: 10px;
+}
+
+.tabs button {
+  background: rgba(255, 255, 255, 0.1);
+  border: 2px solid transparent;
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  padding: 12px 28px;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.tabs button:hover {
+  background: rgba(242, 179, 93, 0.2);
+  border-color: #f2b35d;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.tabs .active {
+  color: white;
+  background: linear-gradient(135deg, #f2b35d 0%, #ff9500 100%);
+  border-color: #f2b35d;
+  box-shadow: 0 8px 20px rgba(242, 179, 93, 0.4);
+  font-weight: 600;
+}
+
+.menu-content {
+  display: none;
+}
+
+.menu-content.active {
+  display: block;
+}
+
+.menu-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 25px;
+  padding: 30px 0;
+}
+
+.menu-item {
+  display: flex;
+  gap: 15px;
+  color: white;
+}
+
+.menu-item img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+}
+
+.menu-item h3 {
+  color: #f2b35d;
+  margin-bottom: 8px;
+}
+
+.menu-item span {
+  color: #ff764d;
+  font-size: 20px;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 900px) {
+  .wrapper {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    min-height: auto;
+  }
+
+  .menu-section {
+    width: 95%;
+  }
+
+  .menu-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero h1 {
+    font-size: 55px;
+  }
+
+  .top-navbar {
+    padding: 0 20px;
+  }
+
+  .top-navbar ul {
+    gap: 15px;
+  }
+}

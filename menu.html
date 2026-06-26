@@ -1,0 +1,270 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>House of Coffee</title>
+
+    <link rel="stylesheet" href="menu.css" />
+    <link rel="stylesheet" href="menu.js" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600&family=Poppins:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <!-- TOP NAVBAR -->
+    <nav class="top-navbar">
+      <div class="brand">House of Coffee</div>
+
+      <ul>
+        <li><a href="dashboard.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="wrapper">
+      <!-- SIDEBAR -->
+      <aside class="sidebar">
+        <div class="logo">
+          ☕
+          <h3>Peace Cafe</h3>
+        </div>
+
+        <ul>
+          <li>Special Menu</li>
+          <li><a href="contact.html">Reservation</a></li>
+          <li><a href="about.html">Coffee Blog</a></li>
+        </ul>
+
+        <div class="social">
+          <a href="https://instagram.com/@hfzsptraa._" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="https://www.tiktok.com/@hfzsptraaa_" target="_blank" rel="noopener noreferrer" aria-label="TikTok">
+            <i class="fab fa-tiktok"></i>
+          </a>
+          <a href="https://www.youtube.com/@Hatra46" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+            <i class="fab fa-youtube"></i>
+          </a>
+        </div>
+      </aside>
+
+      <!-- CONTENT -->
+      <main class="content">
+        <section class="hero">
+          <video class="hero-video" autoplay muted loop>
+            <source src="image/intro.mp4" type="video/mp4">
+          </video>
+          <div class="overlay"></div>
+
+          <div class="hero-content">
+            <div class="info">
+              <span>OPENING : MONDAY TO FRIDAY</span>
+              <span>TIME : 07.00 AM TO 8.00 PM</span>
+            </div>
+
+            <h1>SPECIAL <span>MENU</span></h1>
+          </div>
+        </section>
+
+        <section class="menu-section">
+          <div class="tabs">
+            <button class="active" data-tab="coffee">Coffee</button>
+            <button data-tab="drinks">Drinks</button>
+            <button data-tab="food">Food</button>
+          </div>
+
+          <!-- COFFEE MENU -->
+          <div class="menu-content active" id="coffee">
+            <div class="menu-grid">
+              <div class="menu-item">
+                <img src="image/images.jpg" alt="Cappuccino">
+                <div>
+                  <h3>Cappuccino</h3>
+                  <p>Espresso with steamed milk foam.</p>
+                  <span>Rp 20.000</span>
+                </div>
+              </div>
+
+              <div class="menu-item">
+                <img src="image/espresso.jpg" alt="Espresso">
+                <div>
+                  <h3>Espresso</h3>
+                  <p>Strong and rich coffee shot.</p>
+                  <span>Rp 12.000</span>
+                </div>
+              </div>
+
+              <div class="menu-item">
+                <img src="image/americano.jpg" alt="Americano">
+                <div>
+                  <h3>Americano</h3>
+                  <p>Espresso mixed with iced water.</p>
+                  <span>Rp 13.000</span>
+                </div>
+              </div>
+
+              <div class="menu-item">
+                <img src="image/risretto.jpg" alt="Ristretto">
+                <div>
+                  <h3>Ristretto</h3>
+                  <p>Short and concentrated espresso.</p>
+                  <span>Rp 15.000</span>
+                </div>
+              </div>
+
+              <div class="menu-item">
+                <img src="image/con_panna.jpg" alt="Con Panna">
+                <div>
+                  <h3>Con Panna</h3>
+                  <p>Espresso topped with whipped cream.</p>
+                  <span>Rp 18.000</span>
+                </div>
+              </div>
+
+              <div class="menu-item">
+                <img src="image/mocha.jpg" alt="Mocha">
+                <div>
+                  <h3>Mocha</h3>
+                  <p>Chocolate flavored coffee drink.</p>
+                  <span>Rp 21.000</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- DRINKS MENU -->
+          <div class="menu-content" id="drinks">
+            <div class="menu-grid">
+              <div class="menu-item">
+                <img src="image/thai_tea.jpg" alt="Thai Tea">
+                <div>
+                  <h3>Thai Tea</h3>
+                  <p>Sweet spiced Thai tea with creamy milk.</p>
+                  <span>Rp 14.000</span>
+                </div>
+              </div>
+
+              <div class="menu-item">
+                <img src="image/matcha.jpg" alt="Matcha Latte">
+                <div>
+                  <h3>Matcha Latte</h3>
+                  <p>Rich matcha green tea with smooth milk.</p>
+                  <span>Rp 16.000</span>
+                </div>
+              </div>
+
+              <div class="menu-item">
+                <img src="image/mocktail.jpg" alt="Mocktail">
+                <div>
+                  <h3>Mocktail</h3>
+                  <p>Refreshing fruit blend without alcohol.</p>
+                  <span>Rp 15.000</span>
+                </div>
+              </div>
+
+              <div class="menu-item">
+                <img src="image/smoothies.jpg" alt="Berry Smoothie">
+                <div>
+                  <h3>Berry Smoothie</h3>
+                  <p>Fresh berry smoothie with a fruity twist.</p>
+                  <span>Rp 20.000</span>
+                </div>
+              </div>
+
+              <div class="menu-item">
+                <img src="image/es_teh.jpg" alt="Iced Tea">
+                <div>
+                  <h3>Iced Tea</h3>
+                  <p>Classic iced tea with a crisp finish.</p>
+                  <span>Rp 6.000</span>
+                </div>
+              </div>
+
+              <div class="menu-item">
+                <img src="image/juice.jpg" alt="Fresh Juice">
+                <div>
+                  <h3>Fresh Juice</h3>
+                  <p>Freshly squeezed fruit juice.</p>
+                  <span>Rp 15.000</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- FOOD MENU -->
+          <div class="menu-content" id="food">
+            <div class="menu-grid">
+              <div class="menu-item">
+                <img src="image/croissant.jpg" alt="Butter Croissant">
+                <div>
+                  <h3>Butter Croissant</h3>
+                  <p>Flaky pastry with buttery layers.</p>
+                  <span>Rp 12.000</span>
+                </div>
+              </div>
+
+              <div class="menu-item">
+                <img src="image/toast.jpg" alt="Toast">
+                <div>
+                  <h3>Toast</h3>
+                  <p>Golden browned bread with various toppings.</p>
+                  <span>Rp 14.000</span>
+                </div>
+              </div>
+
+              <div class="menu-item">
+                <img src="image/salad_buah.jpg" alt="Fruit Salad">
+                <div>
+                  <h3>Fruit Salad</h3>
+                  <p>Assorted fresh fruits with a honey dressing.</p>
+                  <span>Rp 18.000</span>
+                </div>
+              </div>
+
+              <div class="menu-item">
+                <img src="image/nasgor.jpg" alt="Fried Rice">
+                <div>
+                  <h3>Fried Rice</h3>
+                  <p>Stir-fried rice with vegetables and protein.</p>
+                  <span>Rp 20.000</span>
+                </div>
+              </div>
+
+              <div class="menu-item">
+                <img src="image/pancong.jpg" alt="Melted Pancong">
+                <div>
+                  <h3>Melted Pancong</h3>
+                  <p>Soft and chewy rice cake with a sweet filling.</p>
+                  <span>Rp 15.000</span>
+                </div>
+              </div>
+
+              <div class="menu-item">
+                <img src="image/french_fries.jpg" alt="French Fries">
+                <div>
+                  <h3>French Fries</h3>
+                  <p>Crispy fried potatoes served with a side of dipping sauce.</p>
+                  <span>Rp 12.000</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
